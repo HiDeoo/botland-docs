@@ -1,0 +1,15 @@
+{
+  extends: [
+    'airbnb',
+    'prettier',
+    'prettier/react',
+  ],
+  plugins: [
+    'prettier',
+  ],
+  rules: {
+    'prettier/prettier': [2, { printWidth: 120, singleQuote: true, trailingComma: 'es5' }],
+    'react/jsx-filename-extension': [2, { extensions: ['.js'] }],
+    'import/no-extraneous-dependencies': 0,
+  },
+}

@@ -1,0 +1,37 @@
+{
+  "name": "botland-docs",
+  "version": "0.0.1",
+  "description": "Bot Land Docs",
+  "main": "n/a",
+  "repository": "https://github.com/HiDeoo/botland-docs",
+  "author": "HiDeo <hideo.sup@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "eslint 'src/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma es5 --print-width 120 --write",
+      "yarn run lint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "gatsby": "1.8.11",
+    "gatsby-link": "1.6.7"
+  },
+  "devDependencies": {
+    "eslint": "4.4.1",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-config-prettier": "2.3.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-prettier": "2.2.0",
+    "eslint-plugin-react": "7.2.1",
+    "husky": "0.14.3",
+    "lint-staged": "4.0.3",
+    "prettier": "1.5.3"
+  }
+}
