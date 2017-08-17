@@ -52,7 +52,7 @@ injectGlobal`
   }
 
   pre[class*="language-"] {
-    background-color: #fbfafa;
+    background-color: #fbfafa !important;
     border: 1px solid #eeeeee;
     font-size: 0.9rem;
   }
