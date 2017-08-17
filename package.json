@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
+    "build": "rimraf public && gatsby build",
     "lint": "eslint 'src/**/*.js'",
     "precommit": "lint-staged"
   },
@@ -20,18 +21,31 @@
   },
   "dependencies": {
     "gatsby": "1.8.11",
-    "gatsby-link": "1.6.7"
+    "gatsby-link": "1.6.7",
+    "gatsby-plugin-catch-links": "1.0.4",
+    "gatsby-plugin-react-helmet": "1.0.2",
+    "gatsby-plugin-styled-components": "1.0.2",
+    "gatsby-remark-autolink-headers": "1.4.3",
+    "gatsby-remark-prismjs": "1.2.0",
+    "gatsby-source-filesystem": "1.4.2",
+    "gatsby-transformer-remark": "1.7.0",
+    "lodash": "4.17.4",
+    "polished": "1.4.0"
   },
   "devDependencies": {
+    "babel-eslint": "7.2.3",
     "eslint": "4.4.1",
     "eslint-config-airbnb": "15.1.0",
     "eslint-config-prettier": "2.3.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-lodash": "2.4.4",
     "eslint-plugin-prettier": "2.2.0",
     "eslint-plugin-react": "7.2.1",
     "husky": "0.14.3",
     "lint-staged": "4.0.3",
-    "prettier": "1.5.3"
+    "prettier": "1.5.3",
+    "prop-types": "15.5.10",
+    "rimraf": "2.6.1"
   }
 }

@@ -1,15 +1,37 @@
 {
   extends: [
     'airbnb',
+    'plugin:lodash/recommended',
     'prettier',
     'prettier/react',
   ],
   plugins: [
+    'lodash',
     'prettier',
   ],
   rules: {
     'prettier/prettier': [2, { printWidth: 120, singleQuote: true, trailingComma: 'es5' }],
     'react/jsx-filename-extension': [2, { extensions: ['.js'] }],
     'import/no-extraneous-dependencies': 0,
+    'import/prefer-default-export': 0,
+    'no-unused-expressions': [2, {
+      allowShortCircuit: false,
+      allowTernary: false,
+      allowTaggedTemplates: true,
+    }],
+    'lodash/import-scope': [2, 'full'],
+    'lodash/prefer-lodash-method': [2, {
+      ignoreObjects: ["React\\.Children"],
+      ignoreMethods: ["includes", "toUpper", "toLower"],
+    }],
   },
+  'globals': {
+    'graphql': true,
+  },
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  parser: 'babel-eslint',
 }
